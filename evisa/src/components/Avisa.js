@@ -3,7 +3,7 @@ import axios from 'axios'
 function Avisa() {
     const [data,setData]= useState([])
     if(data.length==0){
-    axios.get('http://localhost:8000/acceptedvisa',).then((res)=>{
+    axios.get('https://online-evisa-processing-system.vercel.app/acceptedvisa',).then((res)=>{
         console.log(res.data)
         setData(res.data)
     })

@@ -4,13 +4,13 @@ import {useState} from 'react'
 function Applied_users()
 {
     const handleAccept = ()=>{
-        axios.post('http://localhost:8000/accepted',r[0]).then((res)=>{
+        axios.post('https://online-evisa-processing-system.vercel.app/accepted',r[0]).then((res)=>{
             console.log('Application accepted')
         })
     }
     const handleReject = ()=>{
         let obj = {...r[0]}
-        axios.post('http://localhost:8000/rejected',r[0]).then((res)=>{
+        axios.post('https://online-evisa-processing-system.vercel.app/rejected',r[0]).then((res)=>{
             console.log('Application rejected')
         })
     }
@@ -18,7 +18,7 @@ function Applied_users()
     let data =[]
     if(r.length==0)
     {
-        axios.get('http://localhost:8000/appiledusers',{}).then((res)=>{
+        axios.get('https://online-evisa-processing-system.vercel.app/appiledusers',{}).then((res)=>{
             console.log(res.data)
             setR(res.data)
             data = {...r}
