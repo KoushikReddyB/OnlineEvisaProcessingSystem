@@ -7,7 +7,7 @@ function Navbar2() {
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
             role="banner" class="navbar-logo-left-container shadow-three w-nav">
             <div class="container">
-                <div class="navbar-wrapper"><a href="#" class="navbar-brand w-nav-brand"><img src={logo}
+                <div class="navbar-wrapper"><a href="/home" class="navbar-brand w-nav-brand"><img src={logo}
                             loading="lazy" width="66" alt="" /></a>
                     <div class="text-block">eVisaIndia</div>
                     <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
