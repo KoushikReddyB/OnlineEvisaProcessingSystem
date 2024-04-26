@@ -39,15 +39,13 @@ function Login({ store }) {
                     <MDBCol md="6" lg="4">
                         <div className="text-center mb-4">
                             <MDBIcon fas icon="user" className="me-2" size='2x' />
+                            <br></br><br></br><br></br>
                             <MDBInput label='Your Email' id='email1' type='email' />
                         </div>
                         <div className="text-center mb-4">
                             <MDBIcon fas icon="lock" className="me-2" size='2x' />
+                            <br></br><br></br>
                             <MDBInput label='Password' id='pwd' type='password' />
-                        </div>
-                        <div className="d-flex justify-content-between mb-4">
-                            <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
-                            <a href="#!" className="text-decoration-none">Forgot password?</a>
                         </div>
                         <MDBBtn className="mb-4 w-100" color="primary" onClick={handleLogin}>Login</MDBBtn>
                         <MDBBtn className="mb-4 w-100" color="danger" onClick={handleSignup}>Register</MDBBtn>

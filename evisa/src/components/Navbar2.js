@@ -12,7 +12,6 @@ function Navbar2() {
                     <div class="text-block">Online E-Visa</div>
                     <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
                         <ul role="list" class="nav-menu-two w-list-unstyled">
-                            <li><a href="#" class="nav-link">About us</a></li>
                             <li>
                                 <div class="nav-divider"></div>
                             </li>
