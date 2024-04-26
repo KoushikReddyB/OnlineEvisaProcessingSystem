@@ -4,10 +4,16 @@ const mongoose = require('mongoose')
 const port = 8000
 const msh = mongoose.Schema;
 var nodemailer = require('nodemailer');
-const app = new express()
 
+const app = express()
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-lwhq.vercel.app"],
+        methods: [ "POST", "GET" ],
+        credentials: true 
+    }
+));
 app.use(express.json())
-app.use(cors())
 
 mongoose.connect('mongodb+srv://zap:zap@cluster0.xcuvnj8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{ useNewUrlParser: true, useUnifiedTopology: true })
 
