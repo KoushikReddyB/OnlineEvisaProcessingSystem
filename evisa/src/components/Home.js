@@ -89,7 +89,7 @@ function Home() {
               <h1 style={{ fontFamily: 'Courier New', fontSize: '50px', fontWeight: 'bold', color: 'blue' }}>
                 Your One-Stop Destination for E-Visas <br></br> <span style={{ color: "red" }} ref={el} />
               </h1>
-              <p className="margin-bottom-24px" style={{ fontFamily: 'Courier New', color: 'white' }}>
+              <p className="margin-bottom-24px" style={{ fontFamily: 'Courier New', color: 'white' }}><br></br>
                 At our core, we are dedicated to offering a comprehensive array of visa services tailored to meet every aspect of your requirements. Our unwavering commitment revolves around prioritizing your privacy and security while orchestrating a seamless and intuitive user experience. With meticulous attention to detail, we assume full responsibility for delivering a service that not only meets but exceeds your expectations, ensuring a stress-free and expedited visa application journey
               </p>
             </div>

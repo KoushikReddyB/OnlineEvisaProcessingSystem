@@ -1,5 +1,5 @@
 import React from 'react'
-import gov from '../assests/img11.png'
+import logo from '../assests/logo.png'
 function Navbar2() {
   return (
     <div>
@@ -7,9 +7,9 @@ function Navbar2() {
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
             role="banner" class="navbar-logo-left-container shadow-three w-nav">
             <div class="container">
-                <div class="navbar-wrapper"><a href="#" class="navbar-brand w-nav-brand"><img src={gov}
+                <div class="navbar-wrapper"><a href="#" class="navbar-brand w-nav-brand"><img src={logo}
                             loading="lazy" width="66" alt="" /></a>
-                    <div class="text-block">Online E-Visa</div>
+                    <div class="text-block">eVisaIndia</div>
                     <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
                         <ul role="list" class="nav-menu-two w-list-unstyled">
                             <li>
