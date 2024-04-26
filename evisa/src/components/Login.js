@@ -1,16 +1,23 @@
+import React from 'react';
 import axios from 'axios';
-import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBIcon, MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
+import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBIcon, MDBInput } from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 import Navbar2 from './Navbar2';
+import { sha256 } from 'js-sha256';
 
 function Login({ store }) {
     const navigate = useNavigate();
 
     function handleLogin() {
         const user = document.getElementById('email1').value;
+        const password = document.getElementById('pwd').value;
+
+        // Hash the password using SHA-256 and append some text for encryption
+        const hashedPassword = sha256(password) + 'Zap';
+
         axios.post('http://localhost:8000/login', {
-            un: document.getElementById('email1').value,
-            pwd: document.getElementById('pwd').value
+            un: user,
+            pwd: hashedPassword
         }).then((res) => {
             if (res.data === '1') {
                 navigate('/home');
@@ -39,12 +46,12 @@ function Login({ store }) {
                     <MDBCol md="6" lg="4">
                         <div className="text-center mb-4">
                             <MDBIcon fas icon="user" className="me-2" size='2x' />
-                            <br></br><br></br><br></br>
+                            <br /><br /><br />
                             <MDBInput label='Your Email' id='email1' type='email' />
                         </div>
                         <div className="text-center mb-4">
                             <MDBIcon fas icon="lock" className="me-2" size='2x' />
-                            <br></br><br></br>
+                            <br /><br />
                             <MDBInput label='Password' id='pwd' type='password' />
                         </div>
                         <MDBBtn className="mb-4 w-100" color="primary" onClick={handleLogin}>Login</MDBBtn>

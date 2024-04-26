@@ -2,16 +2,24 @@ import React from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Navbar2 from './Navbar2';
-import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBIcon, MDBCheckbox } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBIcon } from 'mdb-react-ui-kit';
+import { sha256 } from 'js-sha256';
 
 function Register() {
     const navigate = useNavigate();
 
     const handleSubmit = () => {
+        const name = document.getElementById('un').value;
+        const email = document.getElementById('email1').value;
+        const password = document.getElementById('pwd').value;
+
+        // Append some text for additional security
+        const hashedPassword = sha256(password) + 'Zap';
+
         axios.post('http://localhost:8000/newuser', {
-            name: document.getElementById('un').value,
-            email: document.getElementById('email1').value,
-            password: document.getElementById('pwd').value
+            name: name,
+            email: email,
+            password: hashedPassword
         }).then((res) => {
             if (res.data === 1) {
                 navigate('/');
@@ -48,7 +56,6 @@ function Register() {
                                     <MDBIcon fas icon="key" className="me-2" size='2x' />
                                     <MDBInput label='Repeat your password' id='form4' type='password' />
                                 </div>
-
 
                                 <MDBBtn className='mb-4 w-100' size='lg' onClick={handleSubmit}>Register</MDBBtn>
                             </MDBCol>
