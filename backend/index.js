@@ -9,7 +9,7 @@ const app = new express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect('mongodb+srv://admin:admin-zap@evisadb.wjpu9jj.mongodb.net/?retryWrites=true&w=majority&appName=EVisaDB',{ useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://zap:zap@cluster0.xcuvnj8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{ useNewUrlParser: true, useUnifiedTopology: true })
 
 const db = mongoose.connection;
 

@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
-
 import gov from '../assests/img11.png';
 import expert from '../assests/expert.jpeg';
 import img from '../assests/img0.jpg';
@@ -57,7 +56,7 @@ function Home() {
           <div className="container">
             <div className="navbar-wrapper">
               <a href="#" className="navbar-brand w-nav-brand">
-                <img src={gov} loading="lazy" width="66" alt="" />
+                <img src={logo} loading="lazy" width="66" alt="" />
               </a>
               <div className="text-block">eVisaIndia</div>
               <nav role="navigation" className="nav-menu-wrapper w-nav-menu">
