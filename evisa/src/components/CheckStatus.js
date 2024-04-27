@@ -6,7 +6,7 @@ function CheckStatus() {
   const [data,setData] = useState()
   const handleSearch = () =>{
    const id = document.getElementById('aid').value
-    axios.post('https://online-evisa-processing-system.vercel.app/search',{id}).then((res)=>{
+    axios.post('http://localhost:8000/search',{id}).then((res)=>{
       setData(res.data)
       setStatus(res.data.status)
     })

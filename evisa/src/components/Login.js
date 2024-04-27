@@ -15,7 +15,7 @@ function Login({ store }) {
         // Hash the password using SHA-256 and append some text for encryption
         const hashedPassword = sha256(password) + 'Zap';
 
-        axios.post('https://online-evisa-processing-system.vercel.app/login', {
+        axios.post('http://localhost:8000/login', {
             un: user,
             pwd: hashedPassword
         }).then((res) => {

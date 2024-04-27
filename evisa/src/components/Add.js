@@ -3,7 +3,7 @@ import axios from 'axios'
 function Add() {
 function handleSubmit()
 {
-    axios.post('https://online-evisa-processing-system.vercel.app/newuser',{
+    axios.post('http://localhost:8000/newuser',{
         name:document.getElementById('un').value,
         email:document.getElementById('email1').value,
         password:document.getElementById('pwd').value,

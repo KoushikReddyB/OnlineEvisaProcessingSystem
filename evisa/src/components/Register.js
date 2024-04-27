@@ -16,7 +16,7 @@ function Register() {
         // Append some text for additional security
         const hashedPassword = sha256(password) + 'Zap';
 
-        axios.post('https://online-evisa-processing-system.vercel.app/newuser', {
+        axios.post('http://localhost:8000/newuser', {
             name: name,
             email: email,
             password: hashedPassword
