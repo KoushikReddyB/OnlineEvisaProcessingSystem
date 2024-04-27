@@ -3,9 +3,7 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const port = 8000
 const msh = mongoose.Schema;
-import { SpeedInsights } from "@vercel/speed-insights/next"
 var nodemailer = require('nodemailer');
-<SpeedInsights />
 const app = express()
 app.use(cors(
     {
