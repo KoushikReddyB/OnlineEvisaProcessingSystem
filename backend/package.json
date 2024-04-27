@@ -10,6 +10,7 @@
   "author": "Himateja Musunuri",
   "license": "ISC",
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "axios": "^1.6.5",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
