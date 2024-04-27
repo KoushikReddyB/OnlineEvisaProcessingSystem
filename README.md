@@ -50,13 +50,10 @@ Make sure that all required packages are installed before running the project.
 
 Contributions are welcome! If you'd like to contribute to the project, feel free to submit a pull request with your changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Authors
 
-- [Author Name](https://github.com/authorname)
+- [Bhimavarapu Koushik Reddy](https://github.com/KoushikReddyB)
 
 ## Acknowledgments
 
