@@ -57,7 +57,7 @@ Contributions are welcome! If you'd like to contribute to the project, feel free
 
 ## Acknowledgments
 
-We would like to express our gratitude to [University Name] for their support and guidance throughout the development of this project.
+We would like to express our gratitude to KL University for their support and guidance throughout the development of this project.
 
 ---
 
